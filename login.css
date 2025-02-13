@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.container {
+  width: 350px;
+  background: rgba(255, 255, 255, 0.1); /* Transparan */
+  backdrop-filter: blur(10px); /* Efek blur */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.top span {
+  color: white;
+  font-size: 14px;
+}
+
+header {
+  color: #ffcc00;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-size: 16px;
+  background: transparent;
+  color: white;
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #ff4500;
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
+  outline: none;
+}
+
+i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.submit {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.submit:hover {
+  background-color: #c0392b;
+}
+
+.submit:active {
+  transform: scale(0.9);
+}
+
+@keyframes error-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.shake {
+  animation: error-shake 0.3s ease-in-out;
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  margin-top: 10px;
+  color: white;
+}
+
+label a {
+  text-decoration: none;
+  color: #ffcc00;
+}
