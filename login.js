@@ -9,7 +9,7 @@ function login() {
         submitButton.style.transform = "scale(0.9)";
         setTimeout(() => {
             submitButton.style.transform = "scale(1)";
-            window.location.href = "index.html";
+            window.location.href = "https://pins71119.github.io/kasir/";
         }, 200);
     } else {
         errorMessage.textContent = "Username atau password salah!";
